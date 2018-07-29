@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
 <head>\
   <meta charset="UTF-8">\
   <title>Sample React App</title>\
+  <link rel="stylesheet" href="build/styles.css">\
 </head>\
 <body>\
   <h1>Sample React App</h1>\

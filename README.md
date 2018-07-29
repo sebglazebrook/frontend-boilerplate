@@ -9,7 +9,7 @@ This is my own personal frontend boilerplate that allows me to get up and runnin
 - [x] ES6
 - [] SSR
 - [] Routing
-- [] CSS Modules
+- [x] CSS Modules
 - [] SASS
 - [] Basic responsive layout and fonts
 - [] Hot reloading
