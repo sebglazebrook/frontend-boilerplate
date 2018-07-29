@@ -4,12 +4,14 @@ This is my own personal frontend boilerplate that allows me to get up and runnin
 
 ## What's included?
 
-- [] React
+- [x] React
+- [x] JSX
+- [x] ES6
 - [] SSR
 - [] Routing
 - [] CSS Modules
 - [] SASS
 - [] Basic responsive layout and fonts
 - [] Hot reloading
-- [] Docker development setup
-- [] Aliases for all repetitive commands
+- [x] Docker development setup
+- [x] Aliases for all repetitive commands

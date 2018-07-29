@@ -8,4 +8,4 @@ services:
     ports:
       - 3000:3000
     user: "1000:1000"
-    command: node app.js
+    command: npm run webpack
