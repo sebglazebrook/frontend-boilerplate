@@ -5,6 +5,6 @@
 dc:
   command: docker-compose
 npm:
-  command: dc run --service-ports appserver npm
+  command: dc run appserver npm
 up:
   command: dc up
