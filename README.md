@@ -11,7 +11,7 @@ This is my own personal frontend boilerplate that allows me to get up and runnin
 - [] Routing
 - [x] CSS Modules
 - [X] SASS/SCSS
-- [] Basic responsive layout and fonts
+- [x] Basic responsive layout and fonts
 - [] Hot reloading
 - [x] Docker development setup
 - [x] Aliases for all repetitive commands

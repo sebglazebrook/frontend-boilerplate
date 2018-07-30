@@ -1,0 +1,31 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  @media only screen  and (min-width : 1024px) {
+    flex-direction: row;
+  }
+}
+
+.innerContainer {
+  flex-direction: column;
+  @media only screen  and (min-width : 1024px) {
+    order: 2;
+    flex-grow: 3;
+    max-width: 1024px;
+  }
+}
+
+.leftBuffer {
+  @media only screen  and (min-width : 1024px) {
+    order: 1;
+    flex-grow: 1;
+  }
+}
+
+.rightBuffer {
+  @media only screen  and (min-width : 1024px) {
+    order: 3;
+    flex-grow: 1;
+  }
+}
+

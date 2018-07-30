@@ -1,0 +1,13 @@
+html {
+  font-size: calc(1em + 1vw);
+  color: #222;
+  font-family: Arial;
+
+  @media screen and (min-width: 75em) {
+    font-size: 1.5em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
+}

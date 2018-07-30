@@ -11,9 +11,7 @@ app.get('/', (req, res) => {
   <title>Sample React App</title>\
   <link rel="stylesheet" href="build/styles.css">\
 </head>\
-<body>\
-  <h1>Sample React App</h1>\
-  <div id="root"></div>\
+<body id="root">\
 \
   <script src="build/bundle.js"></script>\
 \
