@@ -1,0 +1,12 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    [
+      "css-modules-transform", {
+        "preprocessCss": "./loaders/sass-loader.js",
+        "extensions": [".scss"],
+        "generateScopedName": "[name]__[local]___[hash:base64:5]"
+      }
+    ]  
+  ]
+}

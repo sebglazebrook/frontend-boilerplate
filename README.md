@@ -7,7 +7,7 @@ This is my own personal frontend boilerplate that allows me to get up and runnin
 - [x] React
 - [x] JSX
 - [x] ES6
-- [] SSR
+- [x] SSR
 - [] Routing
 - [x] CSS Modules
 - [X] SASS/SCSS
