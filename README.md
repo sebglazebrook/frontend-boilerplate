@@ -8,7 +8,7 @@ This is my own personal frontend boilerplate that allows me to get up and runnin
 - [x] JSX
 - [x] ES6
 - [x] SSR
-- [] Routing
+- [x] Routing
 - [x] CSS Modules
 - [X] SASS/SCSS
 - [x] Basic responsive layout and fonts
