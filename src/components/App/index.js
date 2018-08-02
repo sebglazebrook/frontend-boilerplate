@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot, setConfig } from 'react-hot-loader'
 import styles from './styles.scss';
 import Container from '../Container'
 import Header from '../Header'
@@ -19,4 +20,6 @@ class App extends Component {
 
 }
 
-export default App;
+setConfig({ logLevel: 'debug' });
+
+export default hot(module)(App);

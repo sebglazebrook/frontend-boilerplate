@@ -5,7 +5,15 @@ import { StaticRouter } from "react-router-dom";
 import App from './src/components/App';
 import { renderToString } from "react-dom/server";
 
+
+if (process.env.NODE_ENV !== 'production') {
+  const { devMiddleware, hotMiddleware } = require('./webpack-middleware.js');
+  app.use(devMiddleware);
+  app.use(hotMiddleware);
+}
+
 app.use(express.static(__dirname));
+
 
 app.get('/*', (req, res) => {
 
@@ -29,14 +37,12 @@ function htmlTemplate( reactDom ) {
         <head>
             <meta charset="utf-8">
             <title>React SSR</title>
-            <link rel="stylesheet" href="build/styles.css">
+            <link rel="stylesheet" href="styles.css">
         </head>
 
         <body>
-            <div id="root">
-              ${ reactDom }
-            </div>
-            <script src="build/bundle.js"></script>
+            <div id="root">${reactDom}</div>
+            <script src="bundle.js"></script>
         </body>
         </html>
     `;
