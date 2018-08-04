@@ -37,12 +37,12 @@ function htmlTemplate( reactDom ) {
         <head>
             <meta charset="utf-8">
             <title>React SSR</title>
-            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="build/styles.css">
         </head>
 
         <body>
             <div id="root">${reactDom}</div>
-            <script src="bundle.js"></script>
+            <script src="build/bundle.js"></script>
         </body>
         </html>
     `;
