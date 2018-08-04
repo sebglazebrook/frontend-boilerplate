@@ -16,6 +16,7 @@ const config = {
       {
         test: /\.scss/,
         use: [
+          'css-hot-loader',
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
