@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
   entry: [
@@ -9,13 +9,24 @@ const config = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, "./build"),
-    publicPath: '/'
+    publicPath: '/build'
   },
   module: {
     rules: [
       {
         test: /\.scss/,
-        loader: ExtractTextPlugin.extract('css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]&importLoaders=2!sass-loader'),
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 2,
+              localIdentName: '[name]__[local]___[hash:base64:5]'
+            },
+          },
+          'sass-loader',
+        ],
       },
       {
         test: /\.js$/,
@@ -31,7 +42,9 @@ const config = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin("styles.css"),
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
+    }),
   ]
 }
 
