@@ -11,3 +11,7 @@ const jsx = (
 );
 
 ReactDOM.hydrate(jsx, app);
+
+if (module.hot) {
+  module.hot.accept();
+}
